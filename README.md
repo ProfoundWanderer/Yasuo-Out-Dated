@@ -1,4 +1,5 @@
-Yasuo-Out-DatedThis bot is meant to search /r/YasuoMains or Matchup thread in that subreddit
+*Yasuo-Out-Dated*
+This bot, that has not been updated in a long time, is meant to search /r/YasuoMains or Matchup thread in that subreddit
 for the champion the user typed in then print the comment(or link it?). In the
 future it will be able to seach a site (try op.gg) and display the runes,
 masteries, or builds if asked with the highest win rate. Maybe later have an
