@@ -11,16 +11,16 @@ import praw#, requests, pprint,
 #from bs4 import BeautifulSoup
 ##import pdb#; pdb.set_trace()
 
-reddit = praw.Reddit(user_agent = 'Yasuo Tips Comment Scraper 1.0 for YasuoMains. Contact me at /u/Dfree35 or freemandc@vcu.edu',
-                client_id='OIDWcB4_p4AdRQ', client_secret='NM6U6CrW1cz4H07Vy7V5n15MI90',
-                username='YasTest', password='YasTest') ###r.login works(maybe) but test this at home
+reddit = praw.Reddit(user_agent = 'Yasuo Tips Comment Scraper 1.0 for YasuoMains. Contact me at ',
+                client_id='', client_secret='',
+                username='', password='') 
 
 ###while True: #If logged in try below
 submission = reddit.submission(id='5c9wti') #get reddit thread
 
 #submission.comments.replace_more(limit=0)  MAY NOT NEED
 
-for top_level_comment in submission.comments.list(): #only get the top comment of the thread so needs to change!!!!!!!!!
+for top_level_comment in submission.comments.list(): #only get the top comment of the thread so needs to change!
     #In comment body try to find what the user inputs, make the input lowercase, and start at the beginning of the comment i.e. "> -1"
     if top_level_comment.body.find(input("Who do you need help with?")): ###if input('dw?).lower()' in comment.body
         print(str(top_level_comment.body)) #print the comment that is matched as a string???
